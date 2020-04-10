@@ -1,0 +1,23 @@
+function calculateGrade() {
+	var particip_percent = parseInt (document.getElementById("gradePart").innerHTML)
+	var quiz_percent = parseInt (document.getElementById("gradeQuizzes").innerHTML)
+	var pm1_percent = parseInt (document.getElementById("gradePM1").innerHTML)
+	var pm2_percent = parseInt (document.getElementById("gradePM2").innerHTML)
+	var fin_proj_percent = parseInt (document.getElementById("gradeFinalProj").innerHTML)
+
+
+	var particip_grade = parseFloat (document.getElementById("currPart").value)
+	var quiz_grade = parseFloat (document.getElementById("currQuizzes").value)
+	var pm1_grade = parseFloat (document.getElementById("currPM1").value)
+	var pm2_grade = parseFloat (document.getElementById("currPM2").value)
+	var fin_proj_grade = parseFloat (document.getElementById("currFinProj").value)
+
+
+	var particip = particip_percent * particip_grade / 100
+	var quizzes = quiz_percent * quiz_grade / 100
+	var pm1 = pm1_percent * pm1_grade / 100
+	var pm2 = pm2_percent * pm2_grade / 100
+	var final_proj = fin_proj_percent * fin_proj_grade / 100
+	var final_Grade = particip + quizzes + pm1 + pm2 + final_proj
+	console.log(finGrade)
+}
